@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <title>CoderCake - Home</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdn.imnjb.me/libs/gumby/2.5.11/css/gumby.css">
+
+    <style type="text/css">
+        .faze {
+            display: none;
+            position:relative;
+            font-size: 20em;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 20%;
+            z-index: 1000;
+            height: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <h1 class="faze" id="fadeText">CoderCake</h1>
+    
+    <script type="text/javascript" src="//cdn.imnjb.me/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#fadeText").fadeIn(1000 * 3);
+        });
+    </script>
 </body>
 </html>
